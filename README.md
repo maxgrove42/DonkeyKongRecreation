@@ -1,7 +1,7 @@
 # CIS110_Grove
 Max Grove's final project for CIS110
 
-Instructions to run on line 84
+Instructions to run on line 84. All .java files coded by Max Grove and Ethan Terner except List.java and PennDraw.java. Sources included in those files.
 
 This PROJECT runs a modified version of Donkey Kong arcade. The user controls
     a character and the goal is to interact with other objects on screen
