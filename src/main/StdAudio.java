@@ -1,10 +1,12 @@
+package main;
+
 /******************************************************************************
  *  Compilation:  javac StdAudio.java
  *  Execution:    java StdAudio
  *  Dependencies: none
  *  
  *  Simple library for reading, writing, and manipulating .wav files.
- *
+ *  SOURCE: https://introcs.cs.princeton.edu/java/stdlib/StdAudio.java.html
  *
  *  Limitations
  *  -----------

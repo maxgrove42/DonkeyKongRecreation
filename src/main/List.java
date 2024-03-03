@@ -1,6 +1,6 @@
+package main;
 /**
  * Interface for generic lists.
- * @author maxtrom, brohan
  */
 public interface List<T> {
     

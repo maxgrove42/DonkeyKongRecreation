@@ -1,3 +1,5 @@
+package main;
+
 /******************************************************************************
   *  Compilation:  javac Barrel.java
   *  Execution:    java Barrel (runs basic testing)
@@ -6,9 +8,9 @@
   *  Creates a barrel object for Donkey Kong Game. Barrel can 
   * roll, fall, and stop depending on floors inputted. Used in World.java
   * 
-  * Authors: Ethan Terner, eterner, 206
+  * Authors: 
   *          Max Grove, maxgrove, 205
-  *
+  *	     Ethan Terner, eterner, 206
   ******************************************************************************/
 public class Barrel {
     private double x; private double y;
@@ -34,7 +36,7 @@ public class Barrel {
      */
     public void draw() {
         double neg = Math.pow(-1, floorLevel + 1);
-        PennDraw.picture(x, y, "barrel.png", 24, 24, angle * neg);
+        PennDraw.picture(x, y, "/resources/graphics/barrel.png", 24, 24, angle * neg);
         angle += 5;
     }
     
@@ -44,10 +46,10 @@ public class Barrel {
      */
     public static void draw4(Floor[] floors) {
         double yHeight = floors[0].getY() + floors[0].getHeight() + radius;
-        PennDraw.picture(0.05, yHeight, "barrel.png", 24, 24);
-        PennDraw.picture(0.05, yHeight + 2 * radius, "barrel.png", 24, 24);
-        PennDraw.picture(0.10, yHeight, "barrel.png", 24, 24);
-        PennDraw.picture(0.10, yHeight + 2 * radius, "barrel.png", 24, 24);
+        PennDraw.picture(0.05, yHeight, "/resources/graphics/barrel.png", 24, 24);
+        PennDraw.picture(0.05, yHeight + 2 * radius, "/resources/graphics/barrel.png", 24, 24);
+        PennDraw.picture(0.10, yHeight, "/resources/graphics/barrel.png", 24, 24);
+        PennDraw.picture(0.10, yHeight + 2 * radius, "/resources/graphics/barrel.png", 24, 24);
     }
     
     /* Description: changes the x position to the right

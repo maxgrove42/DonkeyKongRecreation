@@ -1,15 +1,11 @@
+package main;
 /*
-* PARTNER 1 
-* Partner 1 Name: Ethan Terner
-* Partner 1 PennKey: eterner
-* Partner 1 Recitation #: 206
+* AUTHOR 1 
+* Partner 1 Name: Max Grove
 *
-* PARTNER 2 (whose PennKey would come second in alphabetical order)
-* (If you chose to do this project without a partner, write NONE in each spot below.)
-* Partner 2 Name: Max Grove
-* Partner 2 PennKey: maxgrove
-* Partner 2 Recitation #: 205
-* 
+* PARTNER 2
+* Partner 2 Name: Ethan Terner
+*
 * Execution: java LinkedList
 * 
 * This program creates a generic LinkedList class and implements the generic

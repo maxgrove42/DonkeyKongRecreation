@@ -1,3 +1,5 @@
+package main;
+
 /******************************************************************************
  *  Compilation:  javac Floor.java
  *  Execution:    java Floor (runs basic testing)
@@ -6,10 +8,10 @@
  *  Creates a floor object for Donkey Kong Game. Floor can be drawn and
  * compared to mario or barrels for collision detection. Used in World.java
  * 
-  * Authors: Ethan Terner, eterner, 206
+  * Authors: 
   *          Max Grove, maxgrove, 205
- *
- ******************************************************************************/
+  *	     Ethan Terner, eterner, 206
+  ******************************************************************************/
 public class Floor {
     
     //private fields for x/ycenter
@@ -66,7 +68,7 @@ public class Floor {
     * @return n/a
     */
     public void draw() {
-        PennDraw.picture(x, y, "floor.png", 2 * halfWidth * 512,
+        PennDraw.picture(x, y, "/resources/graphics/floor.png", 2 * halfWidth * 512,
                          2 * halfHeight * 512);
     }
     

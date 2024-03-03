@@ -1,3 +1,5 @@
+package main;
+
 /******************************************************************************
   *  Compilation:  javac Mario.java
   *  Execution:    java Mario (runs basic testing
@@ -7,9 +9,9 @@
   * move, fall, and stop depending on floors inputted. Mario can be checked
   * compared to ladders and floors and barrels objects. Used in World.java
   * 
-  * Authors: Ethan Terner, eterner, 206
+  * Authors: 
   *          Max Grove, maxgrove, 205
-  *
+  *	     Ethan Terner, eterner, 206
   ******************************************************************************/
 public class Mario {
     private double x;
@@ -101,11 +103,11 @@ public class Mario {
       */
     public void drawLeft(int dir) {
         if (dir % 3 == 0) {
-            PennDraw.picture(x, y + 0.01, "marioStand.png", 35, 35);
+            PennDraw.picture(x, y + 0.01, "/resources/graphics/marioStand.png", 35, 35);
         } else if (dir % 3 == 1) {
-            PennDraw.picture(x, y + 0.01, "marioRun1.png", 35, 35);
+            PennDraw.picture(x, y + 0.01, "/resources/graphics/marioRun1.png", 35, 35);
         } else if (dir % 3 == 2) {
-            PennDraw.picture(x, y + 0.01, "marioRun2.png", 35, 35);
+            PennDraw.picture(x, y + 0.01, "/resources/graphics/marioRun2.png", 35, 35);
         }
     }
     
@@ -115,11 +117,11 @@ public class Mario {
       */
     public void drawRight(int dir) {
         if (dir % 3 == 0) {
-            PennDraw.picture(x, y + 0.01, "marioStand.png", -35, 35);
+            PennDraw.picture(x, y + 0.01, "/resources/graphics/marioStand.png", -35, 35);
         } else if (dir % 3 == 1) {
-            PennDraw.picture(x, y + 0.01, "marioRun1.png", -35, 35);
+            PennDraw.picture(x, y + 0.01, "/resources/graphics/marioRun1.png", -35, 35);
         } else if (dir % 3 == 2) {
-            PennDraw.picture(x, y + 0.01, "marioRun2.png", -35, 35);
+            PennDraw.picture(x, y + 0.01, "/resources/graphics/marioRun2.png", -35, 35);
         }
     }
     
@@ -129,9 +131,9 @@ public class Mario {
       */
     public void draw(boolean facing) {
         if (facing) {
-            PennDraw.picture(x, y, "marioStand.png", -35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/marioStand.png", -35, 35);
         } else {
-            PennDraw.picture(x, y, "marioStand.png", 35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/marioStand.png", 35, 35);
         }
     }
     
@@ -141,11 +143,11 @@ public class Mario {
       */
     public void pDrawRight(int dir) {
         if (dir % 3 == 0) {
-            PennDraw.picture(x, y, "pickachu1.png", 35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/pickachu1.png", 35, 35);
         } else if (dir % 3 == 1) {
-            PennDraw.picture(x, y, "pickachu2.png", 35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/pickachu2.png", 35, 35);
         } else if (dir % 3 == 2) {
-            PennDraw.picture(x, y, "pickachu3.png", 35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/pickachu3.png", 35, 35);
         }
     }
     
@@ -155,11 +157,11 @@ public class Mario {
       */
     public void pDrawLeft(int dir) {
         if (dir % 3 == 0) {
-            PennDraw.picture(x, y, "pickachu1.png", -35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/pickachu1.png", -35, 35);
         } else if (dir % 3 == 1) {
-            PennDraw.picture(x, y, "pickachu2.png", -35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/pickachu2.png", -35, 35);
         } else if (dir % 3 == 2) {
-            PennDraw.picture(x, y, "pickachu3.png", -35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/pickachu3.png", -35, 35);
         }
     }
     
@@ -169,9 +171,9 @@ public class Mario {
       */
     public void pDraw(boolean facing) {
         if (facing) {
-            PennDraw.picture(x, y, "pickachu1.png", 35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/pickachu1.png", 35, 35);
         } else {
-            PennDraw.picture(x, y, "pickachu1.png", -35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/pickachu1.png", -35, 35);
         }
     }
     
@@ -181,9 +183,9 @@ public class Mario {
       */
     public void drawClimbing(int dir) {
         if (dir % 2 == 0) {
-            PennDraw.picture(x, y, "climbingMario.png", 35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/climbingMario.png", 35, 35);
         } else if (dir % 2 == 1) {
-            PennDraw.picture(x, y, "climbingMario.png", -35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/climbingMario.png", -35, 35);
         }
     }
     
@@ -192,7 +194,7 @@ public class Mario {
       * @return n/a
       */
     public void lightning(double x, double y) {
-        PennDraw.picture(x, y, "lightning.PNG", 46, 350);
+        PennDraw.picture(x, y, "/resources/graphics/lightning.PNG", 46, 350);
     } 
     
     /** Description: draws mario in his jumping frame
@@ -201,9 +203,9 @@ public class Mario {
       */
     public void drawJump(boolean facing) {
         if (facing) {
-            PennDraw.picture(x, y, "marioRun2.png", -35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/marioRun2.png", -35, 35);
         } else {
-            PennDraw.picture(x, y, "marioRun2.png", 35, 35);
+            PennDraw.picture(x, y, "/resources/graphics/marioRun2.png", 35, 35);
         }
     }
     

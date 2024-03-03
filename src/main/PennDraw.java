@@ -1,3 +1,5 @@
+package main;
+
 /*************************************************************************
  *  Compilation:  javac PennDraw.java
  *  Execution:    java PennDraw
@@ -6,7 +8,9 @@
  *  creating drawings with your programs. It uses a simple graphics model that
  *  allows you to create drawings consisting of points, lines, and curves
  *  in a window on your computer and to save the drawings to a file.
- *
+ * 
+ *  SOURCE: https://www.cis.upenn.edu/~cis110/current/assets/example_programs/PennDraw.java
+ *    Standard drawing program from UPenn.
  *  Todo
  *  ----
  *    -  Add support for gradient fill, stipple, etc.

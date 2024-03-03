@@ -1,3 +1,5 @@
+package main;
+
 /******************************************************************************
   *  Compilation:  javac Peach.java
   *  Execution:    java Peach (runs basic testing
@@ -6,9 +8,9 @@
   *  Creates a Peach object for Donkey Kong Game. Peach can 
   * be drawn. Used in World.java
   * 
-  * Authors: Ethan Terner, eterner, 206
+  * Authors: 
   *          Max Grove, maxgrove, 205
-  *
+  *	     Ethan Terner, eterner, 206
   ******************************************************************************/
 public class Peach {
     
@@ -45,7 +47,7 @@ public class Peach {
      * @return n/a
      */
     public void draw() {
-        PennDraw.picture(x, y, "peach.png", -42, 38);
+        PennDraw.picture(x, y, "/resources/graphics/peach.png", -42, 38);
     }
     
     //testing

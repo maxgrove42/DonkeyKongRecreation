@@ -1,6 +1,8 @@
+package main;
+
 /******************************************************************************
-  *  Compilation:  javac World.java
-  *  Execution:    java World
+  *  Compilation:  javac Main.java
+  *  Execution:    java Main
   *  Dependencies: Barrel.java, DonkeyKong.java, Floor.java, Ladder.java,
   *  LinkedList.java, Mario.java, Peach.java, PennDraw.java, StdAudio.java,
   *  image files, audio files
@@ -8,11 +10,11 @@
   *  Runs the world of Donkey Kong Arcade. Runs instructions, then the game, 
   *  then a play-again feature.
   * 
-  * Authors: Ethan Terner, eterner, 206
+  * Authors: 
   *          Max Grove, maxgrove, 205
-  *
-  ***************************************************************************/
-public class World {
+  *	     Ethan Terner, eterner, 206
+  ******************************************************************************/
+public class Main {
     public static void main(String[] args) {
         
         //DRAWING THE INSTRUCTIONS **************************************
@@ -40,7 +42,7 @@ public class World {
         //***************************************************************
         
         //begin playing background music immediately
-        StdAudio.loop("bacmusic.wav");
+        StdAudio.loop("/resources/audio/bacmusic.wav");
         
         boolean playAgain = true;
         while (playAgain) {
@@ -211,7 +213,7 @@ public class World {
                         }
                         //otherwise if he is on the floor, jump
                         else if (mario.floorCollision(floors)) {
-                            StdAudio.play("jump.wav");
+                            StdAudio.play("/resources/audio/jump.wav");
                             climbing = false;
                             jumping = true;
                             mario.jump();
@@ -322,13 +324,13 @@ public class World {
             
             //functions depending on if won or lost
             if (hasWon) {
-                StdAudio.play("win1.wav");
+                StdAudio.play("/resources/audio/win1.wav");
                 PennDraw.setPenColor(PennDraw.GREEN);
                 PennDraw.setFontSize(100);
                 PennDraw.text(0.5, 0.5, "YOU WON!");
             }
             else if (!mario.isAlive()) {
-                StdAudio.play("death.wav");
+                StdAudio.play("/resources/audio/death.wav");
                 PennDraw.setPenColor(PennDraw.RED);
                 PennDraw.setFontSize(100);
                 PennDraw.text(0.5, 0.5, "YOU LOST!");
@@ -343,7 +345,7 @@ public class World {
             while (d != 'y' && d != 'n') {
                 if (PennDraw.hasNextKeyTyped())
                     d = PennDraw.nextKeyTyped();
-                if (d == 'n') return;
+                if (d == 'n') System.exit(0);
             }
         } //close loop for play again   
     } //close main 

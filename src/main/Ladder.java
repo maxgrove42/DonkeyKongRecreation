@@ -1,3 +1,5 @@
+package main;
+
 /******************************************************************************
   *  Compilation:  javac Ladder.java
   *  Execution:    java Ladder (runs basic testing)
@@ -6,8 +8,9 @@
   *  Creates a Ladder object for Donkey Kong Game. Ladder can 
   *  be drawn. Used in World.java
   * 
-  * Authors: Ethan Terner, eterner, 206
+  * Authors: 
   *          Max Grove, maxgrove, 205
+  *	     Ethan Terner, eterner, 206
   ******************************************************************************/
 public class Ladder { 
     private double x;
@@ -29,7 +32,7 @@ public class Ladder {
      * @return n/a
      */
     public void draw() {
-        PennDraw.picture(x, y, "ladder1.png", 0.09 * 256, 70);
+        PennDraw.picture(x, y, "/resources/graphics/ladder1.png", 0.09 * 256, 70);
     }
     
     /* Description: returns y
