@@ -7,7 +7,7 @@ This project is a modified version of the classic Donkey Kong arcade game. Playe
 
 ### How to Run
 1. Compile all the `.java` files in the project directory.
-2. Open `World.java` in your Java IDE or command line.
+2. Open `/src/main/Main.java` in your Java IDE or command line.
 3. In the IDE's interactions pane or command line, type `java World` to start the game.
 4. Follow the on-screen instructions for controls and gameplay.
 
