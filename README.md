@@ -7,8 +7,8 @@ This project is a modified version of the classic Donkey Kong arcade game. Playe
 
 ### How to Run
 1. Compile all the `.java` files in the project directory (`/src/main/`)
-2. Open `/src/main/Main.java` in your Java IDE or command line.
-3. In the IDE's interactions pane or command line, type `java World` to start the game.
+2. Open `/src/main/Main.java` in your Java IDE or navigate to `/src/main` in the command line.
+3. In the IDE's interactions pane, execute `Main.java` or in the command line, type `java Main` to start the game.
 4. Follow the on-screen instructions for controls and gameplay.
 
 ### Gameplay Instructions
@@ -19,7 +19,7 @@ This project is a modified version of the classic Donkey Kong arcade game. Playe
 
 ### Features
 - Transition from Mario to Pikachu on the third floor.
-- Interactive objects: barrels, DonkeyKong, floors, ladders, Mario/Pikachu, Peach, and the game world.
+- Interactive objects: barrels (utilizing LinkedLists), DonkeyKong, floors, ladders, Mario/Pikachu, Peach, and the game world.
 - Background music and sound effects for jumping, winning, and losing.
 
 ### Notes
